@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./images/meatIcon.svg" type="image/png">
+    <title>Churrascômetro</title>
+</head>
+<body>
+    <header class="header">
+        <img src="./images/logo.svg" alt="Logo" class="logo">
+        <h1 class="titulo">Churrascômetro</h1>
+    </header>
+
+    <section class="about">
+        <h2>Como funciona?</h2>
+        <p class="description">O Churrascômetro é a ferramenta perfeita para organizar seu churrasco com amigos ou família. Ele calcula a quantidade ideal de carne, frango, linguiça, refrigerante e cerveja com base no número de homens, mulheres e crianças que vão participar. Basta inserir as quantidades, clicar em "Calcular" e pronto! Os resultados aparecem na hora, garantindo que ninguém fique sem comida ou bebida. É fácil, rápido e eficiente!</p>
+    </section>
+
+    <main class="content">
+        <div class="card-form">
+            <h2>Quantas pessoas irão ao churrasco?</h2>
+            <input type="number" id="mal" placeholder="Homens">
+            <input type="number" id="fem" placeholder="Mulheres">
+            <input type="number" id="chil" placeholder="Crianças">
+            <button onclick="calc()">Calcular</button>
+        </div>
+
+        <div class="response">
+            <h2 class="titulo2">Quantidade de itens a serem comprados:</h2>
+            <p id="totalCarne"></p>
+            <p id="totalFrango"></p>
+            <p id="totalLing"></p>
+            <p id="totalRef"></p>
+            <p id="totalCerv"></p>
+        </div>
+    </main>
+
+    <footer>
+        Feito com ❤ por Diego Menezes.
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
